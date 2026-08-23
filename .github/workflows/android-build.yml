@@ -24,4 +24,4 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Build Pershan
-        gradle assembleDebug --stacktrace --info
+        run: gradle assembleDebug --stacktrace --info
