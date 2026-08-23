@@ -1,7 +1,0 @@
-<resources>
-
-    <style
-        name="Theme.Pershan"
-        parent="android:style/Theme.Material.NoActionBar" />
-
-</resources>
