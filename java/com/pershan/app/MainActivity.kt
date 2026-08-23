@@ -96,17 +96,15 @@ fun PershanApp() {
 
     } else {
 
-        PershanHome(
-            darkMode = darkMode,
-            onThemeChange = {
-                darkMode = !darkMode
-            },
-            onTranslatorClick = {
-                currentScreen = "translator"
-            }
-        )
+    PershanModernHome(
+    darkMode = darkMode,
+    onThemeChange = {
+        darkMode = !darkMode
+    },
+    onTranslatorClick = {
+        screen = "translator"
     }
-}
+)
 
 @Composable
 fun PershanHome(
