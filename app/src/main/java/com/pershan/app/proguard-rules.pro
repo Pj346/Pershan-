@@ -1,0 +1,1 @@
+# Pershan ProGuard rules
