@@ -95,14 +95,13 @@ fun PershanApp() {
         TranslatorScreen()
 
     } else {
-
-    PershanModernHome(
+PershanSpaceHome(
     darkMode = darkMode,
     onThemeChange = {
         darkMode = !darkMode
     },
     onTranslatorClick = {
-        screen = "translator"
+        // ...
     }
 )
 
