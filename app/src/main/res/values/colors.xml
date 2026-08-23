@@ -1,0 +1,6 @@
+<resources>
+    <color name="pershan_background">#070B18</color>
+    <color name="pershan_card">#11182A</color>
+    <color name="pershan_text">#FFFFFF</color>
+    <color name="pershan_accent">#6C63FF</color>
+</resources>
