@@ -1,0 +1,32 @@
+name: Android Build
+
+on:
+  workflow_dispatch:
+  push:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Gradle
+        uses: gradle/actions/setup-gradle@v4
+
+      - name: Check project
+        run: |
+          echo "Checking Pershan project..."
+          find . -maxdepth 4 -type f | sort
+
+      - name: Build
+        run: |
+          chmod +x gradlew
+          ./gradlew assembleDebug
