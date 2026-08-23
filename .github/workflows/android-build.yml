@@ -24,4 +24,5 @@ jobs:
           gradle-version: '8.11.1'
 
       - name: Build Pershan
-        run: gradle assembleDebug --stacktrace --info
+        run: |  gradle assembleDebug --stacktrace --info 2>&1 | tee build.log
+  exit ${PIPESTATUS[0]}
